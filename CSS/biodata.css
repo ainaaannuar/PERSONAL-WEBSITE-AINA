@@ -1,0 +1,121 @@
+body {
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid #740001;
+}
+h1 {
+    color: black;
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #954d25;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
+}
+.int ol{
+    background: #65554e;
+    padding: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: large;
+    list-style-type: square;
+}
+.int ol li{
+    padding: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: large;
+}
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: auto;
+    padding: 30px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.int p{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    line-height: 1.5;
+}
+.int video{
+    width: 80%;
+    height: auto;
+    padding: 5px;
+}

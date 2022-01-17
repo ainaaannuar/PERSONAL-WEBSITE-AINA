@@ -1,0 +1,105 @@
+body {
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: relative;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid #740001;
+}
+h1 {
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #004c4c;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 500px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+p {
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+}
+h2 {
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #004c4c;
+    border-radius: 80px;
+}
+table, th, td {
+    border: 2px solid #134f5c;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 15px;
+}
